@@ -1,0 +1,295 @@
+/* Powderworks Styles */
+
+html {
+    color: #BBB;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+table {
+	font-size: 16px;
+	line-height: 1.5;
+}
+
+.headerImage {
+	margin-top: 4em;
+	display: block;
+	margin-left: auto;
+    margin-right: auto;
+	width: 90%;
+	max-width: 900px;
+	height: auto;
+}
+
+footer {
+	text-align: center;
+}
+
+body {
+	background-color: #111;
+	color: #BBB;
+	font-family: 'Helvetica', 'Arial', sans-serif;
+}
+
+p {
+	margin: 0 0 1.5000em 0;
+}
+
+h1 {
+	font-size: 2em;
+	line-height: 1.5em;
+	margin-top: 0.75em;
+	margin-bottom: 0em;
+}
+
+h2 {
+	font-size: 1.5em;
+	line-height: 1em;
+	margin-top: 1em;
+	margin-bottom: 0em;
+}
+
+h3 {
+	font-size: 1.25em;
+	line-height: 1.2em;
+	margin-top: 1.2em;
+	margin-bottom: 0em;
+}
+
+
+h4 {
+	font-size: 1.0000em; /* 16px */
+  	line-height: 1.5000em; /* 24px */
+  	margin-top: 1.5000em;  
+	margin-bottom: 0.0000em;
+}
+
+ul {
+	margin-top: 0em;
+	margin-bottom: 1.5em;
+}
+
+li {
+	margin-bottom: 1.5em;
+}
+
+ul.subtleList {
+	list-style: none;
+	padding-left: 0;
+}
+
+.subtleList h4 {
+	margin-bottom: 0;
+}
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #336;
+    margin: 1.5em 0;
+    padding: 0;
+}
+
+td {
+	padding: 0 1em;
+}
+
+/* Italic "aside remark" text */
+.remark {
+	font-style: italic;
+}
+
+/* Links */
+a {
+	text-decoration: none;
+}
+
+/* unvisited link */
+a:link {
+	color: #4b92ed;
+}
+
+/* visited link */
+a:visited {
+	color: #AA77A4;
+}
+
+/* mouse over link */
+a:hover {
+	text-decoration: underline;
+}
+
+/* selected link */
+a:active {
+	color: #5EB1BF;
+}
+
+::-moz-selection {
+    background: #559;
+    text-shadow: none;
+}
+
+::selection {
+    background: #559;
+    text-shadow: none;
+}
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+.center {
+	text-align: center;
+}
+
+/*
+ * Hide visually and from screen readers
+ */
+
+.hidden {
+    display: none !important;
+}
+
+/*
+ * Hide only visually, but have it available for screen readers:
+ * http://snook.ca/archives/html_and_css/hiding-content-for-accessibility
+ */
+
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
+/*
+ * Extends the .visuallyhidden class to allow the element
+ * to be focusable when navigated to via the keyboard:
+ * https://www.drupal.org/node/897638
+ */
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
+}
+
+/*
+ * Hide visually and from screen readers, but maintain layout
+ */
+
+.invisible {
+    visibility: hidden;
+}
+
+/*
+ * Clearfix: contain floats
+ *
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    `contenteditable` attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that receive the `clearfix` class.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+
+.clearfix:before,
+.clearfix:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+
+
+/* ==========================================================================
+   Print styles.
+   Inlined to avoid the additional HTTP request:
+   http://www.phpied.com/delay-loading-your-print-css/
+   ========================================================================== */
+
+@media print {
+    *,
+    *:before,
+    *:after,
+    *:first-letter,
+    *:first-line {
+        background: transparent !important;
+        color: #000 !important; /* Black prints faster:
+                                   http://www.sanbeiji.com/archives/953 */
+        box-shadow: none !important;
+        text-shadow: none !important;
+    }
+
+    a,
+    a:visited {
+        text-decoration: underline;
+    }
+
+    a[href]:after {
+        content: " (" attr(href) ")";
+    }
+
+    abbr[title]:after {
+        content: " (" attr(title) ")";
+    }
+
+    /*
+     * Don't show links that are fragment identifiers,
+     * or use the `javascript:` pseudo protocol
+     */
+
+    a[href^="#"]:after,
+    a[href^="javascript:"]:after {
+        content: "";
+    }
+
+    pre,
+    blockquote {
+        border: 1px solid #999;
+        page-break-inside: avoid;
+    }
+
+    /*
+     * Printing Tables:
+     * http://css-discuss.incutio.com/wiki/Printing_Tables
+     */
+
+    thead {
+        display: table-header-group;
+    }
+
+    tr,
+    img {
+        page-break-inside: avoid;
+    }
+
+    img {
+        max-width: 100% !important;
+    }
+
+    p,
+    h2,
+    h3 {
+        orphans: 3;
+        widows: 3;
+    }
+
+    h2,
+    h3 {
+        page-break-after: avoid;
+    }
+}
