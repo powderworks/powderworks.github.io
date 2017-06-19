@@ -12,7 +12,7 @@
 }
 
 .headerImage {
-	margin-top: 4em;
+	margin-top: 1em;
 	display: block;
 	margin-left: auto;
     margin-right: auto;
@@ -99,6 +99,10 @@ footer {
 
 @media screen and (min-width: 700px)
 {
+	.headerImage {
+		margin-top: 2em;
+	}
+
 	#wrapper {
 		max-width: 1380px;
 		margin-left: auto;
@@ -130,6 +134,9 @@ footer {
 
 @media screen and (min-width: 900px)
 {
+	.headerImage {
+		margin-top: 4em;
+	}
 	
 	.column-wrapper {
 		margin-left: 30em;
