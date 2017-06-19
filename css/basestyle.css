@@ -31,29 +31,30 @@ body {
 	font-family: 'Helvetica', 'Arial', sans-serif;
 }
 
+p, h1, h2, h3, h4, ul, li {
+	margin-bottom: 0;
+}
+
 p {
-	margin: 0 0 1.5000em 0;
+	margin-top: 1.5em;
 }
 
 h1 {
 	font-size: 2em;
 	line-height: 1.5em;
 	margin-top: 0.75em;
-	margin-bottom: 0em;
 }
 
 h2 {
 	font-size: 1.5em;
 	line-height: 1em;
 	margin-top: 1em;
-	margin-bottom: 0em;
 }
 
 h3 {
 	font-size: 1.25em;
 	line-height: 1.2em;
 	margin-top: 1.2em;
-	margin-bottom: 0em;
 }
 
 
@@ -61,16 +62,14 @@ h4 {
 	font-size: 1.0000em; /* 16px */
   	line-height: 1.5000em; /* 24px */
   	margin-top: 1.5000em;  
-	margin-bottom: 0.0000em;
 }
 
 ul {
-	margin-top: 0em;
-	margin-bottom: 1.5em;
+	margin-top: 1.5em;
 }
 
 li {
-	margin-bottom: 1.5em;
+	margin-top: 1.5em;
 }
 
 ul.subtleList {
@@ -78,17 +77,14 @@ ul.subtleList {
 	padding-left: 0;
 }
 
-.subtleList h4 {
-	margin-bottom: 0;
-}
-
 hr {
     display: block;
     height: 1px;
     border: 0;
     border-top: 1px solid #336;
-    margin: 1.5em 0;
     padding: 0;
+	margin-top: 1.5em;
+	margin-bottom: -2px;
 }
 
 td {
