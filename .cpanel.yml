@@ -1,0 +1,7 @@
+---
+deployment:
+  tasks:
+    - export DEPLOYPATH=/home/powderworks/public_html/
+    - /bin/cp index.html $DEPLOYPATH
+    - /bin/cp -r images $DEPLOYPATH
+    - /bin/cp -r css $DEPLOYPATH
